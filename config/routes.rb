@@ -3,8 +3,9 @@ Rails.application.routes.draw do
 		namespace :v1 do
 			resources :users
 			resources :pets
-			# patch "/pets/:id/toggle_adopt", to: "pets#toggle_adopt"
-			# post "/pets/:id/adopt", to: "pets#adopt"
+
+			patch "/pets/:id/toggle_adopt", to: "pets#toggle_adopt"
+			post "/pets/:id/adopt", to: "pets#adopt"
 
       #
 			post "/login", to: "auth#login"
