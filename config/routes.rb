@@ -6,6 +6,7 @@ Rails.application.routes.draw do
 
 			patch "/pets/:id/toggle_adopt", to: "pets#toggle_adopt"
 			post "/pets/:id/adopt", to: "pets#adopt"
+      post "/users/:id/get_pet", to: "users#get_pet"
 
       #
 			post "/login", to: "auth#login"

@@ -29,10 +29,11 @@ class Api::V1::UsersController < ApplicationController
 		end
 	end
 
-  def get_pet
 
+
+  def get_pet
 		Pet.create({
-				name: Resetter.generate_name,
+				name: 'ralph',
 				image: Faker::Avatar.image,
 				to_adopt: true,
 				owner_id: params[:id]
