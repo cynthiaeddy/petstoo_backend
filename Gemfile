@@ -16,6 +16,9 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 gem 'active_model_serializers', '~> 0.10.0'
 
+gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+
+
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

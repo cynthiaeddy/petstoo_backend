@@ -9,6 +9,7 @@ class Api::V1::PetsController < ApplicationController
 	end
 
 	def adopt
+    byebug
 		@owner = @pet.owner
 		@pet.update(to_adopt: false, owner_id: curr_user.id)
 		render json: @pet
@@ -17,7 +18,8 @@ class Api::V1::PetsController < ApplicationController
 
   # GET /@pets
   def index
-    @pets = Pet.all
+    @pets =   Pet.where(to_adopt: true)
+    # @pets = Pet.all
     render json: @pets
   end
 
