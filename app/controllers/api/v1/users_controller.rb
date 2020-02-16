@@ -1,26 +1,32 @@
 class Api::V1::UsersController < ApplicationController
 
   def show
-    byebug
-    user = User.find(params[:id])
-    user = pet.owner
 
-    render json: user
+
+    @user = User.find(params[:id])
+    @pet = Pet.find(params[:id])
+    @user = @pet.owner
+    @pet.update( owner_id: curr_user.id)
+
+    render json: @user
   end
 
+  # @pet = Pet.find(params[:id])
+  # @owner = @pet.owner
+  # render json: @pet
 
 
   def create
-		user = User.new(
+		@user = User.new(
 			name: params[:name],
 			password: params[:password]
 		)
-		if user.save
-			token = encode_token(user.id)
+		if @user.save
+			token = encode_token(@user.id)
 
-      render json: {user: UserSerializer.new(user), token: token}
+      render json: {user: UserSerializer.new(@user), token: token}
 		else
-			render json: {errors: user.errors.full_messages}
+			render json: {errors: @user.errors.full_messages}
 		end
 	end
 
@@ -34,10 +40,10 @@ class Api::V1::UsersController < ApplicationController
 				owner_id: params[:id]
 		})
 
-		user = User.find(params[:id])
+		@user = User.find(params[:id])
 
 
-		render json: user
+		render json: @user
 	end
 
 
