@@ -4,7 +4,7 @@ class CreatePets < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :kind
       t.integer :age
-      t.integer :owner_id
+      t.integer :agency_id
       t.string :color
       t.string :hair
       t.string :image

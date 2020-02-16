@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_secure_password
 
-  has_many :pets, foreign_key: "owner_id"
+  has_many :pets, through: :agency
 
   validates :name, uniqueness: true
 

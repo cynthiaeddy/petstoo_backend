@@ -8,13 +8,13 @@ class Api::V1::PetsController < ApplicationController
 		render json: pet
 	end
 
-	def adopt
-    byebug
-    pet = Pet.find(params[:id])
-		owner = pet.owner
-    pet.update(to_adopt: false, owner_id: curr_user.id)
-		render json: pet
-	end
+	# def adopt
+  #   byebug
+  #   pet = Pet.find(params[:id])
+	# 	owner = pet.owner
+  #   pet.update(to_adopt: false, owner_id: curr_user.id)
+	# 	render json: pet
+	# end
 
 
   # GET /@pets
