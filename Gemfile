@@ -17,7 +17,7 @@ gem 'puma', '~> 4.1'
 gem 'active_model_serializers', '~> 0.10.0'
 
 gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
-
+# gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 
 # Use Active Storage variant
