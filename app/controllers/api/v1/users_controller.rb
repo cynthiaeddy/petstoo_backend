@@ -29,9 +29,9 @@ class Api::V1::UsersController < ApplicationController
 		Pet.create({
 				name: Faker::Name.name,
         image: Faker::Avatar.image,
-        
 
-				to_adopt: true,
+
+				to_adopt: false,
 				owner_id: params[:id]
 		})
     # Pet.create({
