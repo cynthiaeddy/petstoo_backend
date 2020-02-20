@@ -9,7 +9,7 @@ class Api::V1::AuthController < ApplicationController
 
       render json: {user: UserSerializer.new(user), token: token}
     else
-      render json: {errors: "You dun goofed!"}
+      render json: {errors: 'please try again'}
     end
   end
 
@@ -17,7 +17,7 @@ class Api::V1::AuthController < ApplicationController
     if curr_user
       render json: curr_user
     else
-      render json: {errors: "You dun goofed!"}
+      render json: {errors: "please try again"}
     end
   end
 end
