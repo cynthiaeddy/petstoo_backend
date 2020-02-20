@@ -9,8 +9,6 @@ Rails.application.routes.draw do
       post "/users/:id/get_pet", to: "users#get_pet"
 
       #
-      get "/", to: "pets#index"
-      # root :to => 'pets#index'
 			post "/login", to: "auth#login"
 			get "/auto_login", to: "auth#auto_login"
 		end
