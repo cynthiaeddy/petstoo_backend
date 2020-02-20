@@ -8,7 +8,6 @@
 Pet.destroy_all
 User.destroy_all
 # Toy.destroy_all
-require 'faker'
 
 
 User.create(id: 1, name: 'cynthia', password: '123')

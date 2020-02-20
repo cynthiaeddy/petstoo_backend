@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.5'
+ruby '2.6.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.2', '>= 6.0.2.1'
@@ -16,7 +16,7 @@ gem 'puma', '~> 4.1'
 # Use Active Model has_secure_password
 gem 'active_model_serializers', '~> 0.10.0'
 
-gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
+# gem 'faker', :git => 'https://github.com/stympy/faker.git', :branch => 'master'
 # gem 'faker', :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 
 
