@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
   namespace :api do
 		namespace :v1 do
+
+      root :to => "pets#index"
       post "/login", to: "auth#login"
+      get "/auto_login", to: "auth#auto_login"
 
       # get "/", to: "pets#index"
 
@@ -9,7 +12,6 @@ Rails.application.routes.draw do
 			post "/pets/:id/adopt", to: "pets#adopt"
       post "/users/:id/get_pet", to: "users#get_pet"
 
-			get "/auto_login", to: "auth#auto_login"
       resources :users
       resources :pets
 		end
