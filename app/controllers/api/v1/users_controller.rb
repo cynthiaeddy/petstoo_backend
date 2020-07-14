@@ -5,7 +5,13 @@ class Api::V1::UsersController < ApplicationController
     # @user = pet.owner
 
     render json: @user
-  end
+	end
+
+	def index
+		@users =  User.all
+    render json: @users
+
+	end
 
 
 
