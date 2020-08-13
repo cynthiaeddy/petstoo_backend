@@ -17,9 +17,9 @@ User.create(id: 4, name: 'ive', password: '123')
 User.create(id: 5, name: 'agency', password: '123')
 
 
-Pet.create(id: 1, name: 'lola', kind: 'cat',age: 13, owner_id: 5, color: 'tortoiseshell grey', hair:'short', image:'https://i.imgur.com/5wi8MWb.png')
-Pet.create(id: 2, name: 'tookie', kind: 'cat',age: 13, owner_id: 5, color: 'tortoiseshell', hair:'short', image:'https://i.imgur.com/nCXct5Q.png')
-Pet.create(id: 3, name: 'zoey', kind: 'dog', age: 8, owner_id: 5, color: 'white', hair:'medium', image:'https://i.imgur.com/PhxDKqg.png')
+Pet.create(id: 1, name: 'lola', kind: 'cat',age: 13, owner_id: 5, color: 'tortoiseshell grey', hair:'short', image:'/assets/lola.jpg')
+Pet.create(id: 2, name: 'tookie', kind: 'cat',age: 13, owner_id: 5, color: 'tortoiseshell', hair:'short', image:'/assets/tookie.jpeg')
+Pet.create(id: 3, name: 'zoey', kind: 'dog', age: 8, owner_id: 5, color: 'white', hair:'medium', image:'/assets/zoey.jpeg')
 Pet.create(id: 4, name: 'simon', kind: 'dog',age: 12, owner_id: 5, color: 'grey', hair:'wirey', image:'https://i.imgur.com/tZMS3DA.png')
 Pet.create(id: 5, name: 'caillie', kind: 'dog',age: 3, owner_id: 5, color: 'black', hair:'wirey', image:'https://i.imgur.com/I1ND8Cw.png')
 Pet.create(id: 6, name: 'leo', kind: 'dog',age: 7, owner_id: 5, color: 'black and white', hair:'long', image:'https://i.imgur.com/U6xnC2U.png')
