@@ -1,24 +1,22 @@
-# README
+## Adopt A Pet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This App has two Github Repositories. This one is for the Rails API backend. The other one is for the React frontend (link below in instructions).
 
-Things you may want to cover:
+## Instructions
+To run this app:
 
-* Ruby version
+PART ONE
 
-* System dependencies
+Clone this repo, then run 'bundle install'.
 
-* Configuration
+Run rails db:create, rails db:migrate and rails db:seed to seed the database.
 
-* Database creation
+After the database is set up, run 'rails s' in terminal to start the rails server.
 
-* Database initialization
+PART TWO
 
-* How to run the test suite
+Go to https://github.com/cynthiaeddy/petstoo_frontend and follow the instructions to run the Adopt A Pet frontend.
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Built with
+• Rails <br/>
+• Deployed with Heroku
